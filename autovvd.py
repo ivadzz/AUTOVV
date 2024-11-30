@@ -2,18 +2,16 @@ import numpy as np
 import time as t
 import os
 
-
-
-
 matriz = np.array([
-    [3, 1, 0, 2],
-    [1, 4, 2, 0],
-    [0, 2, 5, 1],
-    [2, 0, 1, 6]
+    [6,2,1,3],
+    [0,5,0,0],
+    [0,0,4,0],
+    [0,0,0,3]
 ])
 
 
 autovalores, autovetores = np.linalg.eig(matriz)
+
 os.system('cls')
 print("FALA PROFESSOR! DAVI E BRUNO AQUI.\nPRESSIONE ENTER PARA VER OS CALCULOS DE AUTOVALOR E AUTOVETOR DA MATRIZ A, ALÉM DA SUA DIAGONALIZAÇÃO!\n\n MATRIZ:\n{}".format(matriz))
 input('PRESSIONE ENTER...')
